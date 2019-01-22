@@ -18,7 +18,7 @@ public class LogonApplication {
         System.setProperty("hawtio.role","MANAGER");
         System.setProperty("management.security.enabled","false");
         //System.setProperty("server.port", "4200");
-        System.setProperty("server.context-path", "/document-viewer");
+        System.setProperty("server.context-path", "/ccri-logon");
         //System.setProperty("server.servlet.context-path", "/ccri");
         System.setProperty("management.contextPath","/");
 

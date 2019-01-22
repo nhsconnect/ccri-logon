@@ -12,8 +12,5 @@ export const environment = {
       client_secret : '709c79a1-7710-452f-859c-fb6edfb86027',
       client_id : 'ccri-cat',
       cookie_domain : 'localhost'
-  },
-  login : ''
-
-
+  }
 };

@@ -1,14 +1,8 @@
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
 
+ADD target/ccri-logon.jar logon.jar
 
-# ADD google3eacf3dd7222ac95.html /usr/local/tomcat/webapps/ROOT/google3eacf3dd7222ac95.html
-# ADD robots.txt /usr/local/tomcat/webapps/ROOT/robots.txt
-
-
-ADD target/logon.jar logon.jar
-
-
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/logon.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/ccri-logon.jar"]
 
 
