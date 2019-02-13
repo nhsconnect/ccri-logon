@@ -10,7 +10,6 @@ import {LayoutModule} from '@angular/cdk/layout';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
-import {FlexLayoutModule} from '@angular/flex-layout';
 import {KeycloakService} from './service/keycloak.service';
 import {ErrorsHandler} from './service/errors-handler';
 import {AppConfigService} from "./service/app-config.service";
@@ -43,7 +42,6 @@ const appInitializerFn = (appConfig: AppConfigService) => {
       .forRoot(),
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule,
     HttpClientModule,
     TreeModule,
 
