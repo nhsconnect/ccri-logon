@@ -1,8 +1,12 @@
 package uk.nhs.careconnect.ri.logon;
 
 
+import org.apache.camel.CamelContext;
+import org.apache.camel.impl.DefaultCamelContextNameStrategy;
+import org.apache.camel.spring.boot.CamelContextConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class LogonApplication {
@@ -12,9 +16,8 @@ public class LogonApplication {
         System.setProperty("hawtio.authenticationEnabled", "false");
         System.setProperty("hawtio.role","MANAGER");
         System.setProperty("management.security.enabled","false");
-        //System.setProperty("server.port", "4200");
-        System.setProperty("server.context-path", "/ccri-logon");
-        //System.setProperty("server.servlet.context-path", "/ccri");
+
+
         System.setProperty("management.contextPath","/");
 
         SpringApplication.run(LogonApplication.class, args);
