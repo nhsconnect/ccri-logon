@@ -1,8 +1,8 @@
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
 
-ADD target/ccri-logon.jar ccri-logon.jar
+ADD target/cc-logon.jar cc-logon.jar
 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/ccri-logon.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/cc-logon.jar"]
 
 
